@@ -1,0 +1,25 @@
+MAIN:
+
+LOAD_VAL 6
+WRITE_VAR 'inp'
+
+READ_VAR 'inp'
+WRITE_VAR 'result'
+
+READ_VAR 'inp'
+LOAD_VAL 1
+CMP
+JE -10
+READ_VAR 'inp'
+DECR
+WRITE_VAR 'inp'
+READ_VAR 'inp'
+READ_VAR 'result'
+MUL
+WRITE_VAR 'result'
+JMP 11
+
+READ_VAR 'result'
+CALL PRINT
+
+HALT 0
